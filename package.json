@@ -1,0 +1,16 @@
+{
+  "name": "ecomly_server",
+  "version": "1.0.0",
+  "description": "Welcom to my new E-commerce server",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": ""
+  },
+  "repository": "https://github.com/Schandroid243/ecomly_server.git",
+  "author": "Schandroid",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
