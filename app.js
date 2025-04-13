@@ -6,6 +6,7 @@ require("dotenv/config");
 
 const app = express();
 const env = process.env;
+const API = env.API_URL;
 
 //#region Middleware
 app.use(express.json());
@@ -14,15 +15,8 @@ app.use(morgan("tiny"));
 app.use(cors());
 //#endregion
 
-//#region Routes
-app.get("/", (req, res) => {
-  return res.status(404).send("Sorry file missed !");
-});
-
-app.get("/watch/videos/:id", (req, res) => {
-  return res.json({ videoId: req.params.id });
-});
-//#endregion
+const authRouter = require("./routes/auth");
+app.use(`${API}/`, authRouter);
 
 // //#region Start server
 const hostName = env.HOSTNAME;
