@@ -1,16 +1,20 @@
 {
-  "name": "ecomly_server",
+  "name": "SchadServer",
   "version": "1.0.0",
-  "description": "Welcom to my new E-commerce server",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "test": ""
+    "start": "nodemon app.js"
   },
   "repository": "https://github.com/Schandroid243/ecomly_server.git",
-  "author": "Schandroid",
+  "author": "Schandroid243",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.2",
+    "morgan": "^1.10.0",
     "nodemon": "^3.1.9"
   }
 }
